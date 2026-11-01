@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "seonix": {
+      "url": "https://api.seonix.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer sx_mcp_REPLACE_WITH_YOUR_KEY"
+      }
+    }
+  }
+}

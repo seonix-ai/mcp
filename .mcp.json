@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "seonix": {
+      "type": "http",
+      "url": "https://api.seonix.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer ${SEONIX_MCP_KEY}"
+      }
+    }
+  }
+}
