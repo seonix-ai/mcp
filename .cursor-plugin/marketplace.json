@@ -1,0 +1,26 @@
+{
+  "name": "seonix",
+  "description": "Connect your Seonix SEO project: Site Health and fix plan, Google Search Console, keywords, articles and SEO playbooks, with skills that fix a site in code and ship content through Seonix.",
+  "logo": "plugins/seonix/assets/logo.svg",
+  "owner": {
+    "name": "Seonix",
+    "email": "info@seonix.ai"
+  },
+  "metadata": {
+    "description": "Seonix plugins for AI coding agents: SEO autopilot for your website, connected over MCP.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "seonix",
+      "source": "plugins/seonix",
+      "description": "Connect your Seonix SEO project: Site Health and fix plan, Google Search Console, keywords, articles and SEO playbooks, with skills that fix a site in code and ship content through Seonix.",
+      "version": "1.0.0",
+      "homepage": "https://seonix.ai/mcp",
+      "repository": "https://github.com/seonix-ai/mcp",
+      "license": "MIT",
+      "keywords": ["seo", "search-console", "site-health", "content", "mcp"],
+      "category": "seo"
+    }
+  ]
+}

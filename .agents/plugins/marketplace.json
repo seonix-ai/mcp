@@ -1,0 +1,20 @@
+{
+  "name": "seonix",
+  "interface": {
+    "displayName": "Seonix"
+  },
+  "plugins": [
+    {
+      "name": "seonix",
+      "source": {
+        "source": "local",
+        "path": "./plugins/seonix"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "seonix",
+  "description": "Seonix plugins for AI coding agents: SEO autopilot for your website, connected over MCP.",
+  "owner": {
+    "name": "Seonix",
+    "email": "info@seonix.ai",
+    "url": "https://seonix.ai"
+  },
+  "plugins": [
+    {
+      "name": "seonix",
+      "source": "./plugins/seonix",
+      "description": "Connect your Seonix SEO project: Site Health and fix plan, Google Search Console, keywords, articles and SEO playbooks, with skills that fix a site in code and ship content through Seonix.",
+      "category": "seo",
+      "tags": ["seo", "search-console", "site-health", "content", "mcp"]
+    }
+  ]
+}

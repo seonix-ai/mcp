@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny-ps" viewBox="0 0 512 512">
+  <title>Seonix</title>
+  <defs>
+    <radialGradient id="gp" gradientUnits="userSpaceOnUse" cx="30" cy="470" r="520">
+      <stop offset="0" stop-color="#A835F6"/>
+      <stop offset="0.45" stop-color="#A835F6" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#A835F6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gc" gradientUnits="userSpaceOnUse" cx="482" cy="470" r="520">
+      <stop offset="0" stop-color="#28AEF2"/>
+      <stop offset="0.4" stop-color="#28AEF2" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#28AEF2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="#1A1734"/>
+  <rect width="512" height="512" fill="url(#gp)"/>
+  <rect width="512" height="512" fill="url(#gc)"/>
+  <path d="M139.5 195Q148.5 246 208.5 255Q148.5 264 139.5 315Q130.5 264 70.5 255Q130.5 246 139.5 195ZM371.5 202Q380.5 247.5 440 255.5Q380.5 263.5 371.5 309Q362.5 263.5 303 255.5Q362.5 247.5 371.5 202Z" fill="#FFFFFF"/>
+</svg>
