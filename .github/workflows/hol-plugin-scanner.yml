@@ -1,0 +1,23 @@
+# Plugin quality / security scan on every push and PR. The same scanner the
+# hashgraph-online catalogs run centrally; having it here lifts the listing's
+# trust score. Read-only: no network, no secrets.
+name: Plugin scanner
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashgraph-online/ai-plugin-scanner-action@caba2e96aa8ad2feb6cf6fca52442b52e22e779f # v1.2.635
+        with:
+          plugin_dir: .
+          profile: public-marketplace
+          format: markdown
