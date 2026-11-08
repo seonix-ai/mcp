@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pahaa97/seonix",
+  "title": "Seonix",
+  "description": "Automated SEO: Site Health, fix plan, Search Console, keywords and draft scoring for AI agents.",
+  "version": "1.0.1",
+  "websiteUrl": "https://seonix.ai/mcp",
+  "repository": {
+    "url": "https://github.com/seonix-ai/mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://seonix.ai/favicon-512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.seonix.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional. Clients with OAuth sign in through https://api.seonix.ai/.well-known/oauth-protected-resource; others send Bearer <Seonix MCP key (sx_mcp_...)> from the connect flow at https://seonix.ai/mcp.md",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
