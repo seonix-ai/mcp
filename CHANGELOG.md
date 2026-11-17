@@ -2,6 +2,14 @@
 
 All notable changes to the Seonix plugin and MCP client configuration.
 
+## 1.1.0 - 2026-11-17
+
+Protecting the traffic a site already has.
+
+- `seonix-fix-site` opens with one rule: do not break what already ranks. The fix plan is worked by change risk (`safe` first, `careful` one template at a time, `ranking_sensitive` only on pages without traffic), and a ranking-sensitive change on a page with search traffic needs the site owner's yes for that page. A finding left alone on purpose is a valid outcome.
+- `seonix-seo` carries the same rule and names the new `safe_change_protocol` playbook.
+- The skills use what the server now returns: `change_risk`, `agent_note`, `pages_with_traffic` and `owner_approval_required` in `get_fix_plan`, the `safety` block, the `owner_confirmation_required` answer of `apply_fix`, and the new `get_page_changes` tool (what changed on the pages between two scans) for verifying an edit and for looking into a traffic drop.
+
 ## 1.0.0 - 2026-11-02
 
 First packaged release.

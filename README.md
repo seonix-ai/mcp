@@ -1,6 +1,6 @@
 # Seonix for AI agents
 
-Give Claude Code, Codex, Cursor and other AI agents your [Seonix](https://seonix.ai) SEO project: Site Health and the fix plan, Google Search Console, keywords, articles and eleven SEO playbooks — so the agent fixes the site in code, writes in your voice and ships content that shows up in Google, ChatGPT and Gemini.
+Give Claude Code, Codex, Cursor and other AI agents your [Seonix](https://seonix.ai) SEO project: Site Health and the fix plan, Google Search Console, keywords, articles and twelve SEO playbooks — so the agent fixes the site in code, writes in your voice and ships content that shows up in Google, ChatGPT and Gemini.
 
 Seonix grows organic and AI-search visibility for a website on autopilot: it crawls the site, tracks every issue across scans, reads Search Console, researches keywords, scores drafts, and writes and publishes articles. This repository is the plugin that connects an agent to that project through the hosted Seonix MCP server. The server itself runs at Seonix.
 
@@ -85,7 +85,7 @@ Use `https://api.seonix.ai/mcp/p/<project id>` as the URL and every call is scop
 
 ## What the agent can do
 
-46 tools (41 read, 5 write) and 11 SEO playbooks served as MCP prompts, resources and the `get_playbook` tool.
+47 tools (42 read, 5 write) and 12 SEO playbooks served as MCP prompts, resources and the `get_playbook` tool.
 
 | Area | Tools |
 |---|---|
