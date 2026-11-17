@@ -2,6 +2,16 @@
 
 All notable changes to the Seonix plugin and MCP client configuration.
 
+## 1.2.0 - 2026-11-17
+
+The site owner decides; the agent reports.
+
+- `seonix-fix-site` is one pass, not a loop: read the findings, put the ranking-sensitive ones to the owner, apply what they approve, rescan, check what changed with `get_page_changes`, report and stop. A finding that is gone after a scan is not proof of a fix.
+- Any canonical, noindex, robots, redirect or deletion change needs the owner's yes on every page, with or without traffic: a canonicalised, noindexed or redirected page has no traffic of its own. "Fix everything" is not that yes, and an unattended run changes none of them.
+- The risk classes are `low`, `careful` and `ranking_sensitive` (the first was `safe`), the traffic window is 90 days (`search_console_90d`), and the item's `fix` text is the one to follow. `apply_fix` needs `confirm_ranking_sensitive` and `issue_ids` for ranking-sensitive codes (`pages_required` otherwise).
+- `seonix-content`: a published article that gets search clicks is not a draft; its title, H1 and text are not changed to pass a check.
+- Descriptions no longer promise that the agent "fixes the site in code".
+
 ## 1.1.0 - 2026-11-17
 
 Protecting the traffic a site already has.

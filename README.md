@@ -1,6 +1,6 @@
 # Seonix for AI agents
 
-Give Claude Code, Codex, Cursor and other AI agents your [Seonix](https://seonix.ai) SEO project: Site Health and the fix plan, Google Search Console, keywords, articles and twelve SEO playbooks — so the agent fixes the site in code, writes in your voice and ships content that shows up in Google, ChatGPT and Gemini.
+Give Claude Code, Codex, Cursor and other AI agents your [Seonix](https://seonix.ai) SEO project: Site Health and the fix plan, Google Search Console, keywords, articles and twelve SEO playbooks — so the agent can read what Seonix found, propose changes for you to approve, and draft content in your voice.
 
 Seonix grows organic and AI-search visibility for a website on autopilot: it crawls the site, tracks every issue across scans, reads Search Console, researches keywords, scores drafts, and writes and publishes articles. This repository is the plugin that connects an agent to that project through the hosted Seonix MCP server. The server itself runs at Seonix.
 
@@ -90,7 +90,7 @@ Use `https://api.seonix.ai/mcp/p/<project id>` as the URL and every call is scop
 | Area | Tools |
 |---|---|
 | Account & projects | `get_account`, `list_projects`, `get_project`, `get_plan_status`, `get_site_dna`, `get_seo_progress` |
-| Site Health | `get_site_health`, `get_fix_plan`, `list_issues`, `get_issue`, `get_remediation_profile`, `list_scans`, `get_scan_status`, `get_results` |
+| Site Health | `get_site_health`, `get_fix_plan`, `list_issues`, `get_issue`, `get_remediation_profile`, `list_scans`, `get_scan_status`, `get_page_changes`, `get_results` |
 | Search Console | `gsc_status`, `gsc_top_queries`, `gsc_top_pages`, `gsc_page_queries`, `gsc_opportunities`, `gsc_coverage`, `gsc_impact`, `gsc_timeseries` |
 | Google Analytics 4 | `ga4_status`, `ga4_traffic`, `ga4_sources`, `ga4_pages`, `ga4_ai_traffic` |
 | Keywords & content | `list_keyword_candidates`, `list_clusters`, `get_cluster`, `get_calendar`, `list_articles`, `get_article`, `analyze_seo`, `score_article`, `list_channels`, `get_blog_integration_guide` |
@@ -98,7 +98,7 @@ Use `https://api.seonix.ai/mcp/p/<project id>` as the URL and every call is scop
 | Playbooks | `list_playbooks`, `get_playbook` |
 | Write (scope `write`, confirmed per call) | `start_scan`, `apply_fix`, `rollback_fix`, `acknowledge_issue`, `unacknowledge_issue` (`get_fix_run` reads a fix run) |
 
-Playbooks: `seo_review` (the entry point: a full audit-and-plan of the project), `promote_site_playbook`, `work_through_page`, `work_through_all_pages`, `fix_issues_in_code`, `keyword_map_site`, `internal_linking_plan`, `write_article_for_brief`, `striking_distance_plan`, `monthly_seo_report`, `connect_blog_to_seonix`.
+Playbooks: `seo_review` (the entry point: a full audit-and-plan of the project), `promote_site_playbook`, `work_through_page`, `work_through_all_pages`, `fix_issues_in_code`, `safe_change_protocol` (change a page without losing its traffic), `keyword_map_site`, `internal_linking_plan`, `write_article_for_brief`, `striking_distance_plan`, `monthly_seo_report`, `connect_blog_to_seonix`.
 
 Resources: `seonix://guides` (index), `seonix://guides/seo-scoring`, `seonix://guides/title-style`, `seonix://guides/remediation/{code}`, `seonix://guides/blog-integration`, `seonix://playbooks/{name}`.
 
