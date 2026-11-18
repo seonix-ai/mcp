@@ -2,6 +2,15 @@
 
 All notable changes to the Seonix plugin and MCP client configuration.
 
+## 1.3.0 - 2026-11-18
+
+A first answer before any setup, and answers the agent can repeat as they are.
+
+- New tool `check_page(url)`: checks one public page on every Seonix account, Free included, with no project or Search Console needed. Up to three serious findings, each with where on the page, what was found and what to do, or a plain verdict that nothing serious was found. Free accounts get 3 checks a day (`daily_limit` after that); the other tools answer `plan_required` on Free.
+- `get_site_health` starts with `start_here` (the page to open first and why) and reports one set of totals in `counts`; `top_tasks` and `get_fix_plan` list problems before advice (`kind`).
+- `gsc_opportunities` names the page(s) that rank for each query, with that page's own numbers.
+- The descriptions no longer say that articles are written or published through the plugin: Seonix does that in its dashboard and autopilot.
+
 ## 1.2.0 - 2026-11-17
 
 The site owner decides; the agent reports.

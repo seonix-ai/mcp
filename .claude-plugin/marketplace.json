@@ -10,7 +10,7 @@
     {
       "name": "seonix",
       "source": "./plugins/seonix",
-      "description": "Connect your Seonix SEO project: Site Health and fix plan, Google Search Console, keywords, articles and SEO playbooks, with skills that work through Site Health findings without breaking what already ranks, and draft content through Seonix.",
+      "description": "Check any page for SEO problems and connect your Seonix project: Site Health and fix plan, Google Search Console, keywords, articles and SEO playbooks, with skills that work through Site Health findings without breaking what already ranks, and draft content through Seonix.",
       "category": "seo",
       "tags": ["seo", "search-console", "site-health", "content", "mcp"]
     }
